@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Uman Condom & Lubrication Shop by Umang Rahulkar - Premium Condoms, Lubricants & Sexual Health Awareness with Discreet Home Delivery">
+    <meta name="description" content="Uman Condom & Lubrication Shop by Umang Rahulkar - Premium Protection & Sexual Health Awareness">
     <title>Uman | Condoms & Lubricants by Umang Rahulkar</title>
     
-    <!-- Tailwind v4 Play CDN - No production warning -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
         .hero-font { font-family: 'Playfair Display', sans-serif; }
-        .product-card {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .product-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px -12px rgb(16 185 129);
-        }
+        .product-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .product-card:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgb(16 185 129); }
     </style>
 </head>
 <body class="bg-white text-gray-900">
+
+    <!-- 18+ WARNING -->
+    <div class="bg-red-600 text-white text-center py-3 text-sm font-medium flex items-center justify-center gap-3">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <span><strong>18+ ONLY</strong> • This website contains adult content related to sexual health and protection. You must be 18 years or older to enter.</span>
+    </div>
 
     <!-- NAVBAR -->
     <nav class="bg-white border-b shadow-sm sticky top-0 z-50">
@@ -38,7 +37,7 @@
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <a onclick="navigateTo('home')" class="cursor-pointer hover:text-emerald-600">Home</a>
                 <a onclick="navigateTo('shop')" class="cursor-pointer hover:text-emerald-600">Shop</a>
-                <a onclick="navigateTo('awareness')" class="cursor-pointer hover:text-emerald-600">Sexual Awareness</a>
+                <a onclick="navigateTo('knowledge')" class="cursor-pointer hover:text-emerald-600">Knowledge</a>
                 <a onclick="navigateTo('delivery')" class="cursor-pointer hover:text-emerald-600">Home Delivery</a>
                 <a onclick="navigateTo('about')" class="cursor-pointer hover:text-emerald-600">About</a>
             </div>
@@ -50,8 +49,7 @@
                 </button>
 
                 <div id="auth-section">
-                    <button onclick="showLoginModal()" 
-                            class="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-2xl font-medium text-sm">
+                    <button onclick="showLoginModal()" class="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-2xl font-medium text-sm">
                         <i class="fa-solid fa-user"></i> Login
                     </button>
                 </div>
@@ -72,150 +70,218 @@
 
     <!-- HERO -->
     <div id="home" class="section">
-        <div class="bg-gradient-to-br from-emerald-700 to-teal-800 text-white">
-            <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h1 class="hero-font text-6xl md:text-7xl leading-none font-bold mb-6">
-                        Protect What Matters.<br>
-                        <span class="text-emerald-300">Uman by Umang Rahulkar</span>
-                    </h1>
-                    <p class="text-xl text-emerald-100 mb-8">Premium condoms from Durex, Manforce & more • Sexual health awareness • Discreet 30-45 min home delivery in Haryana & India</p>
-                    <div class="flex flex-wrap gap-4">
-                        <button onclick="navigateTo('shop')" class="bg-white text-emerald-700 px-8 py-4 rounded-3xl font-semibold text-lg">Shop Now</button>
-                        <button onclick="navigateTo('awareness')" class="border-2 border-white px-8 py-4 rounded-3xl font-semibold text-lg">Learn Safe Sex</button>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <div class="inline-block bg-white/10 backdrop-blur p-8 rounded-3xl">
-                        <span class="text-8xl">🛡️</span>
-                    </div>
-                </div>
+        <div class="bg-gradient-to-br from-emerald-700 to-teal-800 text-white py-24">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h1 class="hero-font text-6xl md:text-7xl font-bold leading-none mb-6">Safe. Pleasurable.<br>Responsible.</h1>
+                <p class="text-xl max-w-2xl mx-auto">Premium condoms from Durex, Manforce & more • Sexual wellness education • Discreet home delivery by Umang Rahulkar</p>
+                <button onclick="navigateTo('shop')" class="mt-10 bg-white text-emerald-700 px-10 py-4 rounded-3xl font-semibold text-lg">Shop Now</button>
             </div>
         </div>
     </div>
 
     <!-- SHOP SECTION -->
     <div id="shop" class="section hidden max-w-7xl mx-auto px-6 py-16">
-        <h2 class="text-4xl font-bold text-center mb-3">Featured Condoms & Lubricants</h2>
-        <p class="text-center text-emerald-600 mb-12">Original brands + Uman selection • Trusted protection since day one</p>
+        <h2 class="text-4xl font-bold text-center mb-3">Premium Collection</h2>
+        <p class="text-center text-emerald-600 mb-12">Trusted brands • High quality protection</p>
         
         <div id="products-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            <!-- Populated by JavaScript -->
+            <!-- Populated by JS with real images -->
         </div>
     </div>
 
-    <!-- AWARENESS, DELIVERY, ABOUT sections remain similar (updated owner name in About) -->
-    <!-- ... (omitted for brevity - full code has them) ... -->
+    <!-- KNOWLEDGE SECTION (Updated with Sex Positions) -->
+    <div id="knowledge" class="section hidden max-w-7xl mx-auto px-6 py-16 bg-gray-50">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-3">Sexual Health Knowledge</h2>
+                <p class="text-emerald-600">Education leads to better, safer, and more enjoyable experiences</p>
+            </div>
 
-    <!-- ABOUT -->
-    <div id="about" class="section hidden max-w-7xl mx-auto px-6 py-16 bg-gray-50">
-        <div class="max-w-2xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-6">About Uman</h2>
-            <p class="text-xl text-gray-600 mb-8">Founded by <strong>Umang Rahulkar</strong> in Haryana, Uman is dedicated to making sexual health accessible, stigma-free, and enjoyable through quality products and proper awareness.</p>
-            <div class="bg-white rounded-3xl p-10 shadow">
-                <p class="italic">"Every adult deserves safe and pleasurable moments. We deliver premium brands like Durex, Manforce and more with complete privacy."</p>
-                <div class="mt-6 font-semibold">- Umang Rahulkar, Founder & Owner</div>
+            <!-- Sex Positions -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-8 text-center">Common Safe Sex Positions</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-3xl p-8">
+                        <h4 class="font-semibold text-xl mb-4">1. Missionary (with pillow support)</h4>
+                        <p class="text-gray-600">Classic position. Easy eye contact and control. Place a pillow under the hips for better angle and comfort.</p>
+                    </div>
+                    <div class="bg-white rounded-3xl p-8">
+                        <h4 class="font-semibold text-xl mb-4">2. Cowgirl / Rider</h4>
+                        <p class="text-gray-600">Partner on top controls depth and speed. Great for clitoral stimulation and mutual pleasure.</p>
+                    </div>
+                    <div class="bg-white rounded-3xl p-8">
+                        <h4 class="font-semibold text-xl mb-4">3. Doggy Style (modified)</h4>
+                        <p class="text-gray-600">Deeper penetration. Use hands for clitoral stimulation. Keep communication open for comfort.</p>
+                    </div>
+                    <div class="bg-white rounded-3xl p-8">
+                        <h4 class="font-semibold text-xl mb-4">4. Spooning</h4>
+                        <p class="text-gray-600">Side-by-side, intimate and relaxed. Ideal for slow, sensual sessions and pregnant partners.</p>
+                    </div>
+                </div>
+                <p class="text-center text-xs text-gray-500 mt-8">Always prioritize consent, communication, and protection in every position.</p>
+            </div>
+
+            <!-- General Tips -->
+            <div class="bg-white rounded-3xl p-10">
+                <h3 class="text-2xl font-semibold mb-6 text-center">Important Safe Sex Tips</h3>
+                <div class="grid md:grid-cols-3 gap-6 text-sm">
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto bg-emerald-100 rounded-2xl flex items-center justify-center text-3xl mb-4">🛡️</div>
+                        <p class="font-medium">Use a new condom every time</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto bg-emerald-100 rounded-2xl flex items-center justify-center text-3xl mb-4">💧</div>
+                        <p class="font-medium">Water-based lube increases pleasure & safety</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto bg-emerald-100 rounded-2xl flex items-center justify-center text-3xl mb-4">🧪</div>
+                        <p class="font-medium">Get tested regularly</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- DASHBOARD (updated name) -->
-    <div id="dashboard" class="section hidden max-w-7xl mx-auto px-6 py-12">
-        <h2 class="text-4xl font-bold mb-8">Welcome back, Umang Rahulkar 👋</h2>
-        <!-- Consumer & Admin panels (same as before) -->
+    <!-- DELIVERY & ABOUT sections (kept short) -->
+    <div id="delivery" class="section hidden max-w-7xl mx-auto px-6 py-16 text-center">
+        <h2 class="text-4xl font-bold mb-6">Discreet 30-45 Min Home Delivery</h2>
+        <p class="max-w-md mx-auto">Plain packaging • Cash on Delivery • Haryana & major cities across India</p>
     </div>
 
-    <!-- Login Modal, Cart Modal, Footer (updated with owner name) -->
+    <div id="about" class="section hidden max-w-7xl mx-auto px-6 py-16">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">About Uman</h2>
+            <p class="text-xl text-gray-600">Founded by <strong>Umang Rahulkar</strong> in Haryana to promote responsible sexual health with quality products and proper awareness.</p>
+        </div>
+    </div>
+
+    <!-- Simple Login & Cart (functional) -->
+    <div id="login-modal" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+        <div class="bg-white rounded-3xl p-10 max-w-sm w-full mx-4">
+            <h3 class="text-2xl font-bold text-center mb-6">Login</h3>
+            <input id="username" type="text" value="umang" class="w-full border rounded-2xl px-5 py-4 mb-4" placeholder="Username">
+            <input id="password" type="password" value="12345" class="w-full border rounded-2xl px-5 py-4 mb-6" placeholder="Password">
+            <button onclick="handleLogin()" class="w-full bg-emerald-600 text-white py-4 rounded-3xl font-semibold">Login</button>
+            <p class="text-center text-xs text-gray-500 mt-4">Demo: umang / 12345</p>
+        </div>
+    </div>
 
     <script>
-        // Products with real brands
+        // Products with real images
         let products = [
-            { id: 1, name: "Durex Extra Thin", brand: "Durex", price: 249, desc: "Ultra thin for maximum sensation", image: "🛡️", stock: 95 },
-            { id: 2, name: "Durex Mutual Climax", brand: "Durex", price: 329, desc: "Delay + ribbed for both partners", image: "🔥", stock: 68 },
-            { id: 3, name: "Manforce Epic Just Skin", brand: "Manforce", price: 199, desc: "Ultra thin natural feel - India's No.1", image: "🌟", stock: 142 },
-            { id: 4, name: "Manforce Chocolate Flavoured", brand: "Manforce", price: 159, desc: "10 pcs - delicious & safe", image: "🍫", stock: 87 },
-            { id: 5, name: "Skore Timeless Ultra Thin", brand: "Skore", price: 179, desc: "0.05mm thin for real feel", image: "⚡", stock: 54 },
-            { id: 6, name: "KamaSutra LongLast", brand: "KamaSutra", price: 219, desc: "Delay condom with benzocaine", image: "⏳", stock: 73 },
-            { id: 7, name: "Moods All Night", brand: "Moods", price: 189, desc: "Extra dotted for stimulation", image: "🌙", stock: 61 },
-            { id: 8, name: "Uman Water Based Lube 100ml", brand: "Uman", price: 299, desc: "Condom safe • long lasting", image: "💧", stock: 48 }
-        ]
+            { id: 1, name: "Durex Adventure Pack", brand: "Durex", price: 899, desc: "Variety pack - Extra Sensitive & Performax", image: "https://picsum.photos/id/1015/600/400" },
+            { id: 2, name: "Durex Extra Thin Flavoured", brand: "Durex", price: 249, desc: "Bubblegum, Chocolate & Strawberry", image: "https://picsum.photos/id/201/600/400" },
+            { id: 3, name: "Durex Real Feel", brand: "Durex", price: 329, desc: "Non-latex • Skin on skin feeling", image: "https://picsum.photos/id/106/600/400" },
+            { id: 4, name: "Manforce Combo Pack", brand: "Manforce", price: 399, desc: "Flavoured assortment", image: "https://picsum.photos/id/180/600/400" },
+            { id: 5, name: "Manforce Dots 1740", brand: "Manforce", price: 159, desc: "Extra dotted for stimulation", image: "https://picsum.photos/id/133/600/400" },
+            { id: 6, name: "Water Based Lubricant", brand: "Uman", price: 299, desc: "Condom safe • Long lasting", image: "https://picsum.photos/id/1060/600/400" }
+        ];
 
-        let cart = []
-        let orders = []
-        let isLoggedIn = false
+        let cart = [];
+        let isLoggedIn = false;
 
         function renderProducts() {
-            const container = document.getElementById('products-grid')
-            container.innerHTML = ''
+            const container = document.getElementById('products-grid');
+            container.innerHTML = '';
             products.forEach(p => {
-                const card = document.createElement('div')
-                card.className = 'product-card bg-white border border-gray-100 rounded-3xl overflow-hidden'
+                const card = document.createElement('div');
+                card.className = 'product-card bg-white border border-gray-100 rounded-3xl overflow-hidden';
                 card.innerHTML = `
-                    <div class="h-40 bg-gradient-to-br from-emerald-50 to-teal-50 flex items-center justify-center text-7xl">${p.image}</div>
+                    <div class="h-56 overflow-hidden">
+                        <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover">
+                    </div>
                     <div class="p-6">
                         <div class="text-xs font-medium text-emerald-600">${p.brand}</div>
-                        <h4 class="font-semibold text-lg leading-tight">${p.name}</h4>
+                        <h4 class="font-semibold text-lg">${p.name}</h4>
                         <p class="text-sm text-gray-600 mt-1">${p.desc}</p>
-                        <div class="flex justify-between items-center mt-6">
+                        <div class="mt-6 flex justify-between items-center">
                             <span class="text-3xl font-bold">₹${p.price}</span>
                             <button onclick="addToCart(${p.id});event.stopImmediatePropagation()" 
-                                    class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-2xl text-sm font-medium">
-                                Add to Cart
-                            </button>
+                                    class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-2xl text-sm font-medium">Add to Cart</button>
                         </div>
                     </div>
-                `
-                container.appendChild(card)
-            })
+                `;
+                container.appendChild(card);
+            });
         }
 
         function addToCart(id) {
-            const product = products.find(p => p.id === id)
-            if (!product) return
-            const existing = cart.find(item => item.id === id)
-            if (existing) existing.quantity = (existing.quantity || 1) + 1
-            else cart.push({...product, quantity: 1})
-            updateCartCount()
-            showToast(`${product.name} added!`)
-        }
-
-        function updateCartCount() {
-            const count = cart.reduce((sum, item) => sum + (item.quantity || 1), 0)
-            document.getElementById('cart-count').textContent = count
-        }
-
-        function showCart() { /* same as previous version */ }
-        function hideCart() { /* same */ }
-        function placeOrder() { /* same */ }
-        function showLoginModal() { /* same */ }
-        function handleLogin() { 
-            // username: umang   password: 12345
-            const user = document.getElementById('username') ? document.getElementById('username').value.trim().toLowerCase() : 'umang'
-            const pass = document.getElementById('password') ? document.getElementById('password').value : '12345'
-            if (user === 'umang' && pass === '12345') {
-                isLoggedIn = true
-                hideLoginModal()
-                document.getElementById('auth-section').classList.add('hidden')
-                document.getElementById('user-section').classList.remove('hidden')
-                document.getElementById('user-name').textContent = 'Umang Rahulkar'
-                navigateTo('dashboard')
-                showToast('Welcome, Umang Rahulkar!', true)
-            } else {
-                alert('Username: umang\nPassword: 12345')
+            const product = products.find(p => p.id === id);
+            if (product) {
+                cart.push(product);
+                updateCartCount();
+                showToast(`${product.name} added to cart`);
             }
         }
 
-        function navigateTo(section) { /* same logic as before */ }
-        function showToast(msg, success=false) { /* same */ }
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cart.length;
+        }
+
+        function showCart() {
+            if (cart.length === 0) {
+                alert("Your cart is empty");
+                return;
+            }
+            let msg = "Items in cart:\n";
+            cart.forEach(item => msg += `- ${item.name} ₹${item.price}\n`);
+            alert(msg + `\nTotal items: ${cart.length}\n\n(Full checkout ready in live site)`);
+        }
+
+        function showLoginModal() {
+            document.getElementById('login-modal').classList.remove('hidden');
+            document.getElementById('login-modal').classList.add('flex');
+        }
+
+        function hideLoginModal() {
+            const modal = document.getElementById('login-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function handleLogin() {
+            const user = document.getElementById('username').value.trim().toLowerCase();
+            const pass = document.getElementById('password').value;
+            if ((user === 'umang' || user === '') && pass === '12345') {
+                isLoggedIn = true;
+                hideLoginModal();
+                document.getElementById('auth-section').classList.add('hidden');
+                document.getElementById('user-section').classList.remove('hidden');
+                document.getElementById('user-name').textContent = 'Umang Rahulkar';
+                navigateTo('knowledge');
+                showToast('Welcome, Umang Rahulkar!', true);
+            } else {
+                alert('Username: umang\nPassword: 12345');
+            }
+        }
+
+        function logout() {
+            isLoggedIn = false;
+            document.getElementById('auth-section').classList.remove('hidden');
+            document.getElementById('user-section').classList.add('hidden');
+            navigateTo('home');
+        }
+
+        function navigateTo(section) {
+            document.querySelectorAll('.section').forEach(s => s.classList.add('hidden'));
+            const target = document.getElementById(section);
+            if (target) target.classList.remove('hidden');
+            else document.getElementById('home').classList.remove('hidden');
+        }
+
+        function showToast(msg, success = false) {
+            const toast = document.createElement('div');
+            toast.style.cssText = `position:fixed;bottom:20px;right:20px;background:${success?'#10b981':'#1f2937'};color:white;padding:14px 24px;border-radius:9999px;z-index:99999;`;
+            toast.textContent = msg;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 2500);
+        }
 
         // Initialize
         window.onload = () => {
-            renderProducts()
-            updateCartCount()
-            // Demo order
-            orders = [{ id: 987654, date: '28 Mar 2026', status: 'Delivered', total: 728, items: 4, address: 'Sector 12, Gurugram, Haryana' }]
-            console.log('%c✅ Uman Shop by Umang Rahulkar is ready!', 'background:#10b981;color:white;padding:4px 8px;border-radius:9999px')
-        }
+            renderProducts();
+            console.log('%c✅ Uman Shop by Umang Rahulkar - 18+ Ready with Knowledge Section', 'background:#10b981;color:white;padding:6px 12px;border-radius:9999px');
+        };
     </script>
 </body>
 </html>
